@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar_seba.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Sebastian Saade</h2>   
+        <p>Nacido en la ciudad de Ciudad de Corrientes. A fines de los 90 me radique en la ciudad de La Plata donde estudié y me recibi de Licenciado en Comunicación Social con Orientación en Periodismo en la UNLP. Tiempo despues ingresé a trabajar en el ministerio de Economía de la Provincia de Buenos Aires, y en el año 2008 me pasé a la Agencia de Recaudación de la Provincia de Buenos Aires(ARBA), donde trabajo actualmente en el Departamento de Servicios Digitales</p>
+        <p>Despues de un efimero paso por la facultad de Informática, me inicié como autodidacta al aprendizaje de la Programación. Me inicie haciendo cursos sobre Diseño web en el instituto Educación IT. Tiempo mas tarde fui adquiriendo conocimientos basicos de PHP y MySQL. Hace dos años que me dedico a profundizar el aprendizaje y desarrollar bajo el framework Django basado en el lenguaje Python.</p>
+      	<p>A finales de 2018 cree mi propio emprendimiento. Content Diseño Web. Una empresa dedicada al desarrollo de sitios web enfocados en pequeñas y medianas empresas en crecimiento.</p>
+    </div>
+</div>
+{% endblock %}
